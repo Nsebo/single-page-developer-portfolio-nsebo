@@ -24,8 +24,16 @@ header{
     line-height: 2rem;
     letter-spacing: -0.444444px;
 }
-.list-item{
+.list_item{
     list-style: none;
     display: flex;
     gap: 1rem;
+}
+
+.hero_section{
+    min-height: 100vh;
+    min-width: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
