@@ -29,11 +29,16 @@ header{
     display: flex;
     gap: 1rem;
 }
-
-.hero_section{
-    min-height: 100vh;
-    min-width: 85vh;
+.heading{
+font-size: 5.5rem;
+}
+.heading span {
+    border-bottom: 3px solid #4EE1A0;
+}
+.container{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    max-width: 75vw;
+    margin: 0 auto;
 }
