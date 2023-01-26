@@ -1,44 +1,75 @@
+/* GLOBAL SETTINGS */
+
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Space Grotesk', sans-serif;
+:root {
+  --bg-body: hsl(0, 0%, 8%);
+  --bg-contact: hsl(0, 0%, 14%);
+  --accent: hsl(153, 71%, 59%);
+  --text1: hsl(0, 0%, 100%);
+  --text2: hsl(0, 0%, 85%);
+  --invalid: hsl(7, 100%, 68%);
+  --fs-88: 5.5rem;
+  --fs-72: 4.5rem;
+  --fs-48: 3rem;
+  --fs-40: 2.5rem;
+  --fs-32: 2rem;
+  --fs-24: 1.5;
+  --fs-18: 1.125rem;
+  --container: 69.375rem;
+}
+html {
+  box-sizing: border-box;
+  font-size: 100%;
 }
 
-body{
-    background-color: #151515 ;
-    color: #FFFFFF;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 75vw;
-    margin: 0 auto;
-    padding: 1.5rem 0;
+
+body {
+  margin: 0;
+  font-family: 'Space Grotesk', sans-serif;
+  background-color: var(--bg-body);
+  color: var(--text1);
+  font-size: var(--fs-18);
+  line-height: 1.56;
 }
-.logo{
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 2rem;
-    letter-spacing: -0.444444px;
+
+a:hover {
+  color: var(--accent);
 }
-.list_item{
-    list-style: none;
-    display: flex;
-    gap: 1rem;
+
+.header__social {
+  display: inline-block;
 }
-.heading{
-font-size: 5.5rem;
+
+.header__social:hover > svg > path {
+  fill: var(--accent);
 }
-.heading span {
-    border-bottom: 3px solid #4EE1A0;
+
+.wrapper {
+  width: calc(100% - 2rem);
+  max-width: var(--container);
+  margin-inline: auto;
 }
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    max-width: 75vw;
-    margin: 0 auto;
+
+@media (min-width: 37.5em) {
+  /*600px*/
+  .wrapper {
+    width: calc(100% - 3.75rem);
+  }
+}
+
+/*HEADER*/
+
+.header {
+}
+
+.header__home {
+  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 1.02rem + 2.04vw, 2rem);
+  color: var(--text1);
+  text-decoration: none;
 }
