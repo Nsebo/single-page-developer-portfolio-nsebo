@@ -61,8 +61,7 @@ a:hover {
   margin-inline: auto;
 }
 
-@media (min-width: 37.5em) {
-  /*600px*/
+@media (min-width: 37.5em) /*600px*/ {
   .wrapper {
     width: calc(100% - 3.75rem);
   }
