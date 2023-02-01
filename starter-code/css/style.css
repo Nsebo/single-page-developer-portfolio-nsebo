@@ -13,10 +13,10 @@
   --fs-48: 3rem;
   --fs-40: 2.5rem;
   --fs-32: 2rem;
-  --fs-24: 1.5;
+  --fs-24: 1.5rem;
   --fs-18: 1.125rem;
   --container: 69.375rem;
-  --transition: color 25ms ease-in-out;
+  --transition: color 250ms ease-in-out;
 }
 html {
   box-sizing: border-box;
@@ -79,19 +79,20 @@ a:hover {
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
-  gap: 20px 25px;
+  gap: 20px 35px;
 }
 
 .header__home {
   font-size: 1.5rem;
   font-size: clamp(1.5rem, 1.02rem + 2.04vw, 2rem);
+  line-height: 1;
   color: var(--text1);
   text-decoration: none;
   flex: 1 0 100%;
 }
 
-.header__social {
-  display: inline-block;
+.header__social svg {
+  display: block;
 }
 
 .header__social > svg > path {
@@ -106,7 +107,8 @@ a:hover {
   .header__nav {
     justify-content: flex-start;
     align-items: center;
-    text-align: center;
+    text-align: left;
+    gap: 32px;
   }
 
   .header__home {
