@@ -82,33 +82,42 @@
     </header>
     <main id="main">
       <section class="hero">
-        <div class="wrapper">
-          <img
-            src="/starter-code/assets/images/image-profile-mobile.webp"
-            alt="picture of Adam Keyes"
-            srcset="
-              /starter-code/assets/images/image-profile-mobile.webp  348w,
-              /starter-code/assets/images/image-profile-tablet.webp  646w,
-              /starter-code/assets/images/image-profile-desktop.webp 890w
-            "
-            sizes="(max-width: 599.98px) 46.4vw, (max-width: 999.98px) 42vw, 445px"
-          />
-          <h1>Nice to meet you! I'm Adam Keyes.</h1>
+        <div class="wrapper hero__wrapper">
+          <picture class="hero__image">
+            <source
+              media="(min-width: 62.5em)"
+              srcset="/starter-code/assets/images/image-profile-desktop.webp"
+            />
+            <source
+              media="(min-width: 37.5em)"
+              srcset="/starter-code/assets/images/image-profile-tablet.webp"
+            />
+            <img
+              src=" /starter-code/assets/images/image-profile-mobile.webp"
+              alt="picture of Adam Keyes."
+            />
+          </picture>
+          <div class="hero__text">
+            <h1 class="hero__heading">Nice to meet you! I'm Adam Keyes.</h1>
+            <p class="hero__description">
+              Based in the UK, I'm a front-end developer passionate about
+              building accessible web apps that users love.
+            </p>
+            <a href="" class="hero__contact"> Contact me </a>
+          </div>
         </div>
       </section>
     </main>
     <footer class="footer"></footer>
-    Based in the UK, I'm a front-end developer passionate about building
-    accessible web apps that users love. Contact me HTML 4 Years Experience CSS
-    4 Years Experience JavaScript 4 Years Experience Accessibility 4 Years
-    Experience React 3 Years Experience Sass 3 Years Experience Projects Contact
-    me Design portfolio HTML CSS View project View code E-learning landing page
-    HTML CSS View project View code Todo web app HTML CSS JavaScript View
-    project View code Entertainment web app HTML CSS JavaScript View project
-    View code Memory Game HTML CSS JavaScript View project View code Art gallery
-    showcase HTML CSS JavaScript View project View code Contact I would love to
-    hear about your project and how I could help. Please fill in the form, and
-    I’ll get back to you as soon as possible. Name Email Message Send message
-    adamkeyes
+    HTML 4 Years Experience CSS 4 Years Experience JavaScript 4 Years Experience
+    Accessibility 4 Years Experience React 3 Years Experience Sass 3 Years
+    Experience Projects Contact me Design portfolio HTML CSS View project View
+    code E-learning landing page HTML CSS View project View code Todo web app
+    HTML CSS JavaScript View project View code Entertainment web app HTML CSS
+    JavaScript View project View code Memory Game HTML CSS JavaScript View
+    project View code Art gallery showcase HTML CSS JavaScript View project View
+    code Contact I would love to hear about your project and how I could help.
+    Please fill in the form, and I’ll get back to you as soon as possible. Name
+    Email Message Send message adamkeyes
   </body>
 </html>
