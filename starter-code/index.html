@@ -83,7 +83,7 @@
     <main id="main">
       <section class="hero">
         <div class="wrapper hero__wrapper">
-          <picture class="hero__image">
+          <picture>
             <source
               media="(min-width: 62.5em)"
               srcset="/starter-code/assets/images/image-profile-desktop.webp"
@@ -93,12 +93,17 @@
               srcset="/starter-code/assets/images/image-profile-tablet.webp"
             />
             <img
+              class="hero__image"
               src=" /starter-code/assets/images/image-profile-mobile.webp"
               alt="picture of Adam Keyes."
+              width="174"
+              height="383"
             />
           </picture>
           <div class="hero__text">
-            <h1 class="hero__heading">Nice to meet you! I'm Adam Keyes.</h1>
+            <h1 class="hero__heading">
+              Nice to meet you! I'm <span>Adam Keyes</span>.
+            </h1>
             <p class="hero__description">
               Based in the UK, I'm a front-end developer passionate about
               building accessible web apps that users love.
